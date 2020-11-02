@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+  html {
+      box-sizing: border-box;
+  }
+  html ,body{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Libre Baskerville', sans-serif;	
+  }		
+  p{
+      font-size:18px;
+      padding: 20px 20px;		
+  }
+  .tab{
+      padding-top:250px;
+      padding-bottom:250px;
+      text-align:center;
+      height:100%;	   
+  }
+
+  #home{
+      background-image: url('/home/ranga/Downloads/html_css_assg/home_bg');
+      background-repeat: no-repeat;	
+      background-attachment: fixed;
+      background-size: cover;	 		
+  }
+
+  #home-content{
+      background-color: gray;
+      border: 1px solid black;
+      margin-left: 400px;
+      margin-right: 400px;
+  }
+
+  #aboutme ul{
+      border:1px solid black;
+      margin-left:400px;
+      margin-right:400px;
+      list-style-type:none;
+  }
+
+  #contactme input[type=text], textarea {
+      width: 50%;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 5px;
+      border: none;
+      outline: none;
+  }
+  
+  #contactme textarea {
+      height: 180px;
+  }
+
+  #contactme button {
+      width: 10%;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 5px;
+      background-color: #292b2c;
+      color: #fff;
+  }
+
+  #mygallery img {
+      height:100%;
+      width:100%;
+  }
+
+  #mygallery img:hover {
+      opacity: 0.8;
+  }
+	
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#aboutme">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contactme">Contact Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mygallery">My Gallery</a>
+    </li>		
+   
+  </ul>
+</nav>
+
+<!-- HOME -->
+
+<div id="home" class="container-fluid tab">
+  <div id="home-content">	
+    <h1>Home</h1>
+    <p><i>Hey there!!... Welcome to my home page</i></p>
+  </div>			
+</div>
+
+
+<!-- ABOUT ME -->
+
+<div id="aboutme" class="container-fluid tab">
+  <h1>About Me</h1>
+    <hr>
+    <p><strong>Introduction:</strong> This is Pandu Ranga. I am a 2 year experienced software professional working for Zemoso Technologies, Hyderabad.</p> 
+    <p><strong>Skills and Interests:</strong></p>
+    <ul>
+	<li>Java</li>
+	<li>Operating Systems</li>
+	<li>Machine Learning</li>
+	<li>Data Structures and Algorithms</li>
+    </ul>
+
+</div>
+
+
+<!-- CONTACT ME -->
+
+<div id="contactme" class="container-fluid bg-info tab">
+  <h1>Contact Me</h1>
+  <hr>
+  <p><i>Have your say!!</i></p>
+  <form action="#">
+    <input type="text" placeholder="Name"/> 
+    <br/>
+    <input type="text" placeholder="Email"/>
+    <br/>
+    <input type="text" placeholder="Subject"/>
+    <br/>
+    <textarea placeholder="Please Enter Your Message..."></textarea>
+    <br/>
+    <button type="submit" onclick="function thanks(){alert('Thanks for the message!!')};thanks()"><i class="fa fa-send-o"></i> Send</button>	
+  </form>
+  	
+</div>
+
+
+<!-- MY GALLERY -->
+
+<div id="mygallery" class="container-fluid tab">
+  <h1>My Gallery</h1>
+  <hr>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px;">
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image" ></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+    <div class="col-md-3">
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image"></img>
+      
+    </div>
+  </div>
+</div>
+	 	
+
+</div>
+
+</body>
+</html>
+
