@@ -1,0 +1,72 @@
+html {
+      box-sizing: border-box;
+	}
+html ,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Libre Baskerville', sans-serif;	
+}		
+p{
+	font-size:18px;
+	padding: 20px 20px;		
+}
+.tab{
+	padding-top:10%;
+	padding-bottom:45%;
+	text-align:center;
+	height:100%;	   
+}
+
+#home{
+	background-image: url('images/home_bg');
+	background-repeat: no-repeat;	
+	background-attachment: fixed;
+	background-size: cover;	 		
+}
+
+#home-content{
+	background-color: gray;
+	border: 1px solid black;
+	margin : auto;
+	width: 40%;
+	transition: 1s;
+}
+
+#aboutme ul{
+	border:1px solid black;
+	margin: auto;
+	width: 40%;
+	list-style-type:none;
+}
+
+#contactme input[type=text], textarea {
+	width: 50%;
+	border-radius: 8px;
+	padding: 0.75%;
+	margin-bottom: 5px;
+	border: none;
+	outline: none;
+}
+
+#contactme textarea {
+	height: 180px;
+}
+
+#contactme button {
+	width: 8%;
+	border-radius: 8px;
+	padding: 0.6%;
+	margin-bottom: 5px;
+	background-color: #292b2c;
+	color: #fff;
+}
+
+#mygallery img {
+	height:100%;
+	width:100%;
+}
+
+#mygallery img:hover {
+	opacity: 0.8;
+}
