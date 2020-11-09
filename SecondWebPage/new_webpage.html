@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+
+        <script>
+		function openPage(pageName,element){
+		    var i,box;	
+		    box=document.getElementsByClassName("box");
+		    for(i=0;i<box.length;i++){	
+			box[i].style.display="none";
+		    }
+		    document.getElementById(pageName).style.display="block";
+		}	
+        </script>
+
+	<style>
+		body{
+		  margin: 0;
+		  padding: 0;
+		  background: url('bg1.png');
+		  background-size: cover;
+		}
+		.box{
+		  height: 550px;	
+		  width: 500px;
+		  background: rgba(0, 0, 0, 0.7);
+		  padding: 40px;
+		  text-align: center;
+		  margin: auto;
+		  margin-top: 5%;
+		  color: white;
+		  font-family: 'Libre Baskerville', sans-serif;
+		  animation: fadeEffect 1s;	
+		}
+		.box-img{
+		  border-radius: 50%;
+		  width: 200px;
+		  height: 200px;
+		}
+		.box h1{
+		  font-size: 40px;
+		  letter-spacing: 4px;
+		  font-weight: 100;
+		}
+		.box h5{
+		  font-size: 20px;
+		  letter-spacing: 3px;
+		  font-weight: 100;
+		}
+		.box p{
+		  text-align: justify;
+		}
+		ul{
+		  margin: 0;
+		  padding: 0;
+		}
+		.box li{
+		  list-style: none;	
+		}	
+		.box li.link{
+		  display: inline-block;
+		  margin: 6px;
+		}
+		.box li a{
+		  color: white;
+		  text-decoration: none;
+		  font-size: 60px;
+		  transition: all ease-in-out 250ms;
+		}
+		.box li a:hover{
+		  color: #bbbbbb;
+		}
+		
+		.contact-me-form{
+		     height: 40%;		
+		}
+		.contact-me-form input[type=text], textarea {
+		      width: 60%;
+		      border-radius: 8px;
+		      padding: 0.75%;
+		      margin-bottom: 5px;
+		      border: none;
+		      outline: none;
+		  }
+		
+		.contact-me-form input[type=text]{
+		     height: 15%	
+		  }
+
+		.contact-me-form textarea {
+		      height: 60%;
+		  }
+
+		.contact-me-form button {
+		      height: 15%;	
+		      width: 25%;
+		      border-radius: 8px;
+		      padding: 0.6%;
+		      margin-bottom: 5px;
+		      background-color: rgba(0, 0, 0, 0.7);;
+		      color: #fff;
+		      outline: none; 	
+		  }
+		
+		.contact-me-form button:hover{
+		  background: rgba(45, 45, 45, 0.9);				
+		}
+
+		.gallery-img {
+		  height: 100%;
+		  width: 100%;
+		}
+		
+		.image img{
+		  height: 100%;
+		  width: 100%;	
+		}		
+
+		.menu {
+		  display: flex;
+		  justify-content: space-around;		
+		  width: 600px;
+		  padding: 40px;
+		  text-align: center;
+		  margin: auto;
+		  margin-top: 5%;
+		  color: white;
+		}	
+		
+		.menu button{
+   		  width: 22%;	
+		  padding:12px;
+                  font-size: 14px;
+		  background: rgba(0, 0, 0, 0.7);
+		  border-radius: 10px;
+		  color: #fff;
+ 		  outline: none;
+                  font-family: 'Libre Baskerville',sans-serif;				
+		}
+		
+		.menu button:hover{
+		  background: rgba(45, 45, 45, 0.9);				
+		}
+
+		@keyframes fadeEffect {
+		  from {opacity: 0;}
+		  to {opacity: 1;}
+		}
+
+	</style>	
+
+	<title>MySelf</title>
+	</head>
+
+	<body>
+		<div id="home" class="box">
+			<img src="profile1.jpg" alt="" class="box-img">
+			<h1>Pandu Ranga</h1>
+			<h5>Software Developer</h5>
+			<p></p>
+			<ul>
+				<li class="link"><a href="https://www.facebook.com/pandu.ranga.397/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li class="link"><a href="https://github.com/panduRangaZemoso" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+				<li class="link"><a href="https://www.linkedin.com/in/pandu-ranga-rao-anantatmula-v-s-r-724923145/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+	       <div id="about_me" class="box">
+			<h1>About Me</h1>
+			<p><strong>Introduction:</strong></p>	
+			<p>This is Pandu Ranga. I am a 2 year experienced software professional working for Zemoso Technologies, Hyderabad.</p>
+			<p><strong>Skills and Interests:</strong></p>
+			<ul>
+				<li class="skill">Java</li>
+				<li class="skill">Operating Systems</li>
+				<li class="skill">Machine Learning</li>
+				<li class="skill">Data Structures and Algorithms</li>
+		    	</ul>	
+		</div>
+               
+		<div id="contact_me" class="box">
+			<h1>Contact Me</h1>
+			<h5>Have your say!!</h5>
+			
+			<form action="#" class="contact-me-form">
+			    <input type="text" placeholder="Name"/> 
+			    <br/>
+			    <input type="text" placeholder="Email"/>
+			    <br/>
+			    <input type="text" placeholder="Subject"/>
+			    <br/>
+			    <textarea placeholder="Please Enter Your Message..."></textarea>
+			    <br/>
+			    <button type="submit" onclick="function thanks(){alert('Thanks for the message!!')};thanks()"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>	
+			</form>
+		</div> 	
+
+
+	       <div id="my_gallery" class="box">
+			<div id="myCarousel" class="carousel slide gallery-img" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active image">
+			      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image">
+			    </div>
+
+			    <div class="item image">
+			      <img src="https://static.toiimg.com/photo/72975551.cms" alt="My Image">
+			    </div>
+
+			    <div class="item image">
+			      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="My Image">
+			    </div>
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+	       </div>		 
+
+               <div class="menu">
+			<button onclick="openPage('home',this)" id="default">Home</button>
+			<button onclick="openPage('about_me',this)">About Me</button>
+ 			<button onclick="openPage('contact_me',this)">Contact Me</button>
+			<button onclick="openPage('my_gallery',this)">Gallery</button>	
+	       </div>
+
+	      <script>document.getElementById("default").click();</script>		
+	</body>
+</html>
+
+
