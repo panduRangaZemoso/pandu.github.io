@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <style>
+  	.table-list {
+      display:block;
+      position:absolute;
+      top:50px;
+      left:0;
+      width:25%;
+      overflow-y: auto;
+    }
+    
+    .item-list {
+      display:block;
+      position:absolute;
+      top:50px;
+      left:23%;
+      width:75%;
+      overflow-y: auto;
+      max-height: 90%;
+    }
+
+    input {
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: black;
+        width: 80%;    
+    }
+    input:focus {
+        border-color: green;
+        width: 82%;
+    }
+
+    .table-details {
+        font-size:14px;
+        text-align:left;
+    }
+
+    .modal-lg {
+        width: 50%;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<div>
+  <h2 style="font-family: 'Goldman', cursive; text-align: center;"> Bunnies Burgers </h2> 
+
+  <div class="table-list list-group">
+      <ul>
+        <!-- TABLE SEARCH --> 
+        <li class="list-group-item"><i class="fa fa-search" aria-hidden="true"></i> <input placeholder="Table Name" type="text" id="table-search" onkeyup="searchTables()"/> </li>  
+      </ul>
+  </div>
+  
+  <div class="item-list list-group">
+      <ul>
+        <!-- ITEM SEARCH -->  
+        <li class="list-group-item"><i class="fa fa-search" aria-hidden="true"></i><input placeholder="Item Name" type="text" id="item-search" onkeyup="searchItems()"/></li>  
+      </ul>
+  </div>
+
+  <div class="modal-block"></div>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+<script>
+    loadPage();
+</script>
+
+</body>
+</html>

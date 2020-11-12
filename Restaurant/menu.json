@@ -1,0 +1,54 @@
+[
+    {
+        "itemName":"The Hulk Burger",
+        "price": 199.00
+    },
+    {
+        "itemName":"Jack Daniel Burger",
+        "price": 189.00
+    },
+    {
+        "itemName":"Fatty melt Burger",
+        "price": 149.00
+    },
+    {
+        "itemName":"Smokey Chicken Burger",
+        "price": 179.00
+    },
+    {
+        "itemName":"Fiery Chicken Burger",
+        "price": 169.00
+    },
+    {
+        "itemName":"Humming Burger",
+        "price": 129.00
+    },
+    {
+        "itemName":"Veg Cheese Burger",
+        "price": 99.00
+    },
+    {
+        "itemName":"Paneer Burger",
+        "price": 109.00
+    },
+    {
+        "itemName":"Hola Burger",
+        "price": 79.00
+    },
+    {
+        "itemName":"Boring Chicken Burger",
+        "price": 99.00
+    },
+    {
+        "itemName":"Junglee Burger",
+        "price": 109.00
+    },
+    {
+        "itemName": "Devil Burger",
+        "price": 119.00
+    },
+    {
+        "itemName":"Sloppy Joe Burger",
+        "price": 139.00
+    }
+]
